@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="side">
+            <img src="lofi.gif" alt="animated pixel art" class="pixel-art">
+        </div>
+        <p>Pixel Art by Kirokaze on Pinterest</p>
+    </div>
+    <div class="info-section">
+
+    </div>
+    <div class="input-section">
+        <p>Let's do this! </p>
+        <form id="my-form">
+            <div class="inputs">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" required>
+                <div id='first-name-error' class='error'></div>
+            </div>
+
+            <div class="inputs">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" required>
+                <div id='last-name-error' class='error'></div>
+            </div>
+           
+            <div class="inputs">
+                <label for="email">Email</label>   
+                <input type="email" id="email" name="email" required autocomplete="off">
+                <div id='email-error' class='error'></div>
+            </div>
+
+            <div class="inputs">
+                <label for="phonenumber">Phone Number</label>
+                <input type="tel" id="phonenumber" name="phonenumber" required 
+                pattern='[0-9]{10}'>
+                <div id='tel-error' class='error'></div>
+            </div>
+
+            <div class="inputs">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required 
+                pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'>
+                <div id='password-error' class='error'></div>
+            </div>
+
+            <div class="inputs">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required
+                pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'>
+                <div id='confirm-password-error' class='error'></div>
+            </div>
+        </form>
+
+    </div>
+    <div class="submit-section">
+        <div>
+            <button type="submit" form="my-form">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+          </div>
+    </div>
+    
+</body>
+</html>
