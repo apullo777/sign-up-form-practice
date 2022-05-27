@@ -16,12 +16,12 @@ body{
     flex-direction: row;
 }
 
-  /* LEFT-SIDE */
+/* LEFT-SIDE */
 
   .left-side {
     display: flex;
     flex-direction: column;
-    width: 43%;
+    width: 34%;
     height: 100vh;
 }
 
@@ -32,13 +32,13 @@ img{
     margin-right: 15px;
 }
 
-  /* RIGHT-SIDE */
+/* RIGHT-SIDE */
 
 
 .right-side {
     display: flex;
     flex-direction: column;
-    width: 57%;
+    width: 66%;
     background-size: auto;
     margin: 0; 
     padding: 0;
@@ -50,9 +50,10 @@ img{
     justify-content: center;
     align-items: start;
     flex-grow: 2;
+    padding: 15px;
   }
 
-  /* INPUT */
+/* INPUT */
 
   
 .input-section {
@@ -60,9 +61,10 @@ img{
     justify-content: center;
     flex-direction: column;
     background-color: var(--primary-light);
-    padding: 1.2rem 2vw 3rem 2vw;
+    padding: 1.2rem 2vw 1.5rem 2vw;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
     border-radius: 42px;
+    margin-right: 15px;
 }
   
 form {
@@ -89,8 +91,8 @@ label {
 }
   
 input {
-    width: 70%;
-    padding: 5px 10px;
+    width: 75%;
+    padding: 3px 6px;
     border-radius: 8px;
     border: 1px solid rgb(224, 224, 224);
     font-size: .9rem;
@@ -104,26 +106,28 @@ input:focus {
 }
   
 input:invalid:focus {
-    border: 2px solid rgb(255, 69, 100)
+    border: 3px solid rgb(255, 158, 174)
 }
   
 input:focus:valid {
-    border: rgb(0, 183, 255) 2px solid;
+    border: 3px solid rgb(118, 216, 255);
 }
   
 .error {
-    font-size: .5rem;
-    color: rgb(232, 82, 107);
-    margin-top: 5px;
+    font-size: 0.8rem;
+    color: rgb(255, 158, 174);
+    margin-top: 0.4rem;
+    margin-left: 0.3rem;
     letter-spacing: 0.08rem;
     width: 75%;
 }
 
-  /* SUBMIT */
+/* SUBMIT */
 
 
 .submit-section {
-    margin-top: 2rem;
+    margin-top: 20px;
+    margin-left: 10px;
 }
   
 button[type='submit'] {
@@ -149,7 +153,7 @@ a:-webkit-any-link {
     text-decoration: underline;
 }
 
-  /* FOOTER */
+/* FOOTER */
 
 .footer {
     display: flex;
@@ -161,20 +165,20 @@ a:-webkit-any-link {
     bottom: 10px;
     gap: 7px;
     padding: 5px;
-    font-size: 0.7rem;
-  }
+    font-size: 0.75rem;
+}
 
-  .fa-github {
+.fa-github {
     color: var(--secondary-light);
     font-size: 18rem;
     transition: transform 0.3s ease-in-out;
-  }
+}
   
-  .fa-github:hover {
+.fa-github:hover {
     transform: rotate(360deg) scale(1.8);
-  }
+}
 
-  /* MEDIA */
+/* MEDIA */
 
 @media (min-width:300px) and (max-width:800px){
     .container {
